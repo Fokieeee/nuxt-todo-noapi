@@ -10,9 +10,9 @@
 <script>
 export default {
   name: "DefaultLayout",
-  async mounted() {
-    await this.$store.dispatch("fetch");
-  },
+  // async mounted() {
+  //   await this.$store.dispatch("fetch");
+  // },
 };
 </script>
 

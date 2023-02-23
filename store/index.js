@@ -1,5 +1,36 @@
 export const state = () => ({
-  tasks: [],
+  tasks: [
+    {
+      userId: 1,
+      id: 1,
+      title: "delectus aut autem",
+      completed: false,
+    },
+    {
+      userId: 1,
+      id: 2,
+      title: "quis ut nam facilis et officia qui",
+      completed: false,
+    },
+    {
+      userId: 1,
+      id: 3,
+      title: "fugiat veniam minus",
+      completed: false,
+    },
+    {
+      userId: 1,
+      id: 4,
+      title: "et porro tempora",
+      completed: true,
+    },
+    {
+      userId: 1,
+      id: 5,
+      title: "laboriosam mollitia et enim quasi adipisci quia provident illum",
+      completed: false,
+    },
+  ],
 });
 
 export const getters = {
@@ -31,11 +62,11 @@ export const mutations = {
   },
 };
 
-export const actions = {
-  async fetch({ commit }) {
-    const tasks = await this.$axios.$get(
-      "https://jsonplaceholder.typicode.com/todos?_limit=5"
-    );
-    commit("SET_TASKS", tasks);
-  },
-};
+// export const actions = {
+//   async fetch({ commit }) {
+//     const tasks = await this.$axios.$get(
+//       "https://jsonplaceholder.typicode.com/todos?_limit=5"
+//     );
+//     commit("SET_TASKS", tasks);
+//   },
+// };
