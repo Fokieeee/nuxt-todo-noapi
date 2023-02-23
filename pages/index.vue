@@ -1,10 +1,10 @@
 <template>
   <div class="hero-body is-flex-direction-column">
     <section>
-      <b-field>
-        <b-input v-model="newTitle" placeholder="Add new task"></b-input>
-        <b-button @click="addTask" class="ml-3">Add</b-button>
-      </b-field>
+
+        <input v-model="newTitle" placeholder="Add new task"></input>
+        <button @click="addTask" class="ml-3">Add</button>
+
     </section>
 
     <div
